@@ -25,7 +25,7 @@ export default function Album(){
                         <li> <strong>Id do usuario:</strong> {album.userId}</li>
                         <li> <strong>ID:</strong> {album.id}</li>
                         <li> <strong>Titulo:</strong>  {album.title}</li>
-                        <Link to={`/sobre/${id}/album/fotos/${id}`}>Ir para foto</Link>
+                        <Link to={`/album/${id}/fotos`}>Ir para foto</Link>
                     </ul>
                 </div>
             ))}

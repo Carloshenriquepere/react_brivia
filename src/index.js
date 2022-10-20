@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Sobre from './pages/Sobre';
-import Album from './pages/Album';
+import Home from './componentes/pages/Home';
+import Sobre from './componentes/pages/Sobre';
+import Album from './componentes/pages/Album';
 import './App.css'
-import Fotos from './pages/Fotos'
+import Fotos from './componentes/pages/Fotos'
 
 
 
@@ -19,7 +19,7 @@ root.render(
     <Route exact path='/' element={<Home/>} />
     <Route path='/sobre/:id' element={<Sobre/>} />
     <Route path='/sobre/:id/album' element={<Album/>} />
-    <Route path='/sobre/:id/album/fotos/:id' element={<Fotos/>}/>
+    <Route path='/album/:id/fotos' element={<Fotos/>}/>
   </Routes>
  </BrowserRouter>
 );
